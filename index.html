@@ -1,0 +1,703 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Colour Analysis Final</title>
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Adobe Fonts Link -->
+  <link rel="stylesheet" href="https://use.typekit.net/zva5ato.css">
+</head>
+
+<body>
+
+  <!-- Start introduction overlay -->
+  <div class="introduction">
+    <h1>WELCOME!</h1>
+    <p>Explore Impressionism and Post-Impressionism in a whole new way through this interactive colour analysis
+      experience.</p>
+    <button class="get-started">ENTER</button>
+  </div>
+  <!-- End introduction overlay -->
+
+  <!-- Start Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn">×</a>
+    <!--About button-->
+    <button class="about-button">ABOUT</button>
+    <div class="filters-sidebar">
+      <div class="ui-group">
+        <h3>Subject</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="filter-button-subject">
+          <button class="button is-checked filter-buttons" data-filter="*">All</button>
+          <button class="button filter-buttons" data-filter=".landscape-filter">Landscape</button>
+          <button class="button filter-buttons" data-filter=".portrait-filter">Portrait</button>
+          <button class="button filter-buttons" data-filter=".stilllife-filter">Still life</button>
+          <button class="button filter-buttons" data-filter=".reallife-filter">Everyday life</button>
+        </div>
+      </div>
+
+      <div class="ui-group">
+        <h3>Impressionist Artist</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="filter-button-impressionist-artist">
+          <button class="button is-checked filter-buttons" data-filter="*">All</button>
+          <button class="button filter-buttons" data-filter=".renoir-filter">Auguste Renoir</button>
+          <button class="button filter-buttons" data-filter=".pissarro-filter">Camille Pissarro</button>
+          <button class="button filter-buttons" data-filter=".degas-filter">Edgar Degas</button>
+          <button class="button filter-buttons" data-filter=".manet-filter">Edouard Manet</button>
+          <button class="button filter-buttons" data-filter=".seurat-filter">Georges Seurat</button>
+        </div>
+      </div>
+
+      <div class="ui-group">
+        <h3>Post-Impressionist Artist</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="filter-button-postimpressionist-artist">
+          <button class="button is-checked filter-buttons" data-filter="*">All</button>
+          <button class="button filter-buttons" data-filter=".seurat-filter">Georges Seurat</button>
+          <button class="button filter-buttons" data-filter=".lautrec-filter">Henri de Toulouse-Lautrec</button>
+          <button class="button filter-buttons" data-filter=".cezanne-filter">Paul Cézanne</button>
+          <button class="button filter-buttons" data-filter=".gauguin-filter">Paul Gauguin</button>
+          <button class="button filter-buttons" data-filter=".vangogh-filter">Vincent Van Gogh</button>
+        </div>
+      </div>
+      <div class="ui-group">
+        <h3>Brush Stroke</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="filter-button-brush-style">
+          <button class="button is-checked filter-buttons" data-filter="*">All</button>
+          <button class="button filter-buttons" data-filter=".loose-filter">Small, loose</button>
+          <button class="button filter-buttons" data-filter=".pointillism-filter">Pointillism</button>
+          <button class="button filter-buttons" data-filter=".painterly-filter">Painterly</button>
+        </div>
+      </div>
+    </div>
+    <button class="isotope-reset">Clear all filters</button>
+  </div>
+  <div class="filter-background"></div>
+
+  <div id="main">
+    <button class="openbtn">
+      <p id="arrow-button">►</p>
+    </button>
+  </div>
+  <!-- End Sidebar -->
+
+  <div class="container">
+    <div class="filters">
+      <!-- Start group of filter buttons -->
+      <div class="button-group filter-button-group filters-sidebar">
+        <button class="button is-checked" data-filter="*" id="all-filter">All</button>
+        <button class="button" data-filter=".red" id="red-filter"></button>
+        <button class="button" data-filter=".orange" id="orange-filter"></button>
+        <button class="button" data-filter=".yellow" id="yellow-filter"></button>
+        <button class="button" data-filter=".green" id="green-filter"></button>
+        <button class="button" data-filter=".blue" id="blue-filter"></button>
+        <button class="button" data-filter=".purple" id="purple-filter"></button>
+        <!-- End group of filter buttons -->
+      </div>
+    </div>
+
+    <!-- Painting grids and titles -->
+    <div class="impressionism-title">
+      <h2>IMPRESSIONISM</h2>
+    </div>
+    <div class="post-impressionism-title">
+      <h2>POST-IMPRESSIONISM</h2>
+    </div>
+
+    <div class="painting-grid">
+      <div class="painting1">
+        <div class="painting-item green impressionism landscape-filter pissarro-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437299"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1859.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>This view of Pontoise, just northwest of Paris, helped establish Pissarro’s reputation as an
+                    innovative painter of the rural French landscape. The critic Émile Zola praised the picture
+                    enthusiastically when it was shown along with another rustic scene at the Salon of 1868, writing,
+                    'This is the modern countryside. One feels that man has passed by, turning and cutting the earth. .
+                    . . And this little valley, this hill have a heroic simplicity and forthrightness. Nothing would be
+                    more banal were it not so grand. From ordinary reality the painter's temperament has drawn a rare
+                    poem of life and strength.'</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Jalais Hill, Pontoise</h2>
+            <h3>Camille Pissarro, 1867</h3>
+          </div>
+        </div>
+        <div class="painting-item blue impressionism reallife-filter manet-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436947"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-25466-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Manet summered at Gennevilliers in 1874, often spending time with Monet and Renoir across the Seine
+                    at Argenteuil, where Boating was painted. Beyond adopting the lighter touch and palette of his
+                    younger Impressionist colleagues, Manet exploits the broad planes of color and strong diagonals of
+                    Japanese prints to give inimitable form to this scene of outdoor leisure. Rodolphe Leenhoff, the
+                    artist’s brother-in-law, is thought to have posed for the sailor but the identity of the woman is
+                    uncertain. Shown in the Salon of 1879, Boating was deemed 'the last word in painting' by Mary
+                    Cassatt, who recommended the acquisition to the New York collectors Louisine and H.O. Havemeyer.</p>
+                </div>
+              </div>
+            </a> </div>
+          <div class="painting-content">
+            <h2>Boating</h2>
+            <h3>Edouard Manet, 1874</h3>
+          </div>
+        </div>
+        <div class="painting-item green impressionism reallife-filter degas-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/438817"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-20101-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>This work and its variant in the Musée d'Orsay, Paris, represent the most ambitious paintings Degas
+                    devoted to the theme of the dance. Some twenty-four women, ballerinas and their mothers, wait while
+                    a dancer executes an 'attitude' for her examination. Jules Perrot, a famous ballet master, conducts
+                    the class. The imaginary scene is set in a rehearsal room in the old Paris Opéra, which had recently
+                    burned to the ground. On the wall beside the mirror, a poster for Rossini’s Guillaume Tell pays
+                    tribute to the singer Jean-Baptiste Faure, who commissioned the picture and lent it to the 1876
+                    Impressionist exhibition.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>The Dance Class</h2>
+            <h3>Edgar Degas, 1874</h3>
+          </div>
+        </div>
+        <div class="painting-item yellow impressionism reallife-filter pissarro-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/459108"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/rl/original/DT3127.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>The theme of potato gathering recurs in Pissarro’s oeuvre in a number of media—pencil, gouache,
+                    oil, and prints—over a period of thirty years. The artist is borrowing a subject from the great
+                    Barbizon painter Camille Corot, while anticipating the more staccato, broken brushwork of later
+                    artists such as Georges Seurat. In the Lehman Collection painting, Pissarro’s treatment of
+                    harvesters in Pontoise is carefully structured, while remaining expressive in tone and brushwork.
+                  </p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>The Harvest, Pontoise (La Récolte, Pontoise)</h2>
+            <h3>Camille Pissarro, 1881</h3>
+          </div>
+        </div>
+        <div class="painting-item green impressionism reallife-filter pissarro-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437304"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1860.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>By virtue of their size, placement, and quiet dignity, these youthful laborers dominate the
+                    landscape setting—an open field near Pissarro’s house at Éragny. Sympathetic to anarchist ideals,
+                    the artist wanted to preserve the values of agrarian society that were being threatened by the rapid
+                    industrialization of France. He began this picture in summer 1891 and completed it in mid-January
+                    1892, a month before the opening of a major exhibition of his work organized by his dealer Joseph
+                    Durand-Ruel. Many of the fifty paintings were sold from the show, but Pissarro kept this canvas and
+                    gave it to his wife.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Two Young Peasant Women</h2>
+            <h3>Camille Pissarro, 1891–92</h3>
+          </div>
+        </div>
+        <div class="painting-item orange impressionism portrait-filter renoir-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/459110"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/rl/original/DP-17279-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Pierre Auguste Renoir painted a great many canvases of single bathers in outdoor settings, timeless
+                    studies of fulsome young women. In the Lehman painting, his model averts her glance, seated in shy
+                    three-quarter profile. Innocent yet sensual, this charming nude would have pleased Renoir's audience
+                    in the later nineteenth century. The picture is thinly painted, its brushwork soft and supple.
+                    Renoir probably posed his model in the studio, since the rapidly brushed landscape background is far
+                    more imaginary than real. Claude Monet first owned this painting, and remarked to a friend that
+                    while the nude was beautiful, the landscape was conventional. Renoir clearly concentrates his brush
+                    on the undulating physiognomy of his innocent auburn-haired model.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Young Girl Bathing</h2>
+            <h3>Auguste Renoir, 1892</h3>
+          </div>
+        </div>
+        <div class="painting-item green impressionism landscape-filter pissarro-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/438738"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-20613-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Made the same year as Pissarro’s bird’s-eye views of the Jardin des Tuileries in Paris, this
+                    idyllic scene of a meadow near the artist’s home in rural Éragny is a counterpoint to his paintings
+                    of modern urban life. Pissarro depicted the same trio of haystacks, seen from a slightly different
+                    vantage point, and under afternoon rather than morning light (private collection), a practice
+                    recalling Monet’s Haystacks series of the early 1890s.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Haystacks, Morning, Éragny</h2>
+            <h3>Camille Pissarro, 1899</h3>
+          </div>
+        </div>
+        <div class="painting-item blue impressionism portrait-filter renoir-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437430"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-14936-039.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Renoir likely painted this work in his studio, posing his model in a wicker chair and relying on
+                    studies he had made on the Normandy coast to furnish the beach scene behind her. Stylistically, it
+                    reflects the impact of Renoir’s trip to Italy in 1881–82, which inspired him to unite the “grandeur
+                    and simplicity” he admired in Renaissance art with the luminosity of Impressionism. His new
+                    approach, which he called his “dry” manner, is evident in the sitter’s face, with its carefully
+                    drawn features and smooth handling of paint. The medley of quick strokes in the background, however,
+                    displays the freer technique of Renoir’s earlier years.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>By the Seashore</h2>
+            <h3>Auguste Renoir, 1883</h3>
+          </div></a>
+        </div>
+        <div class="painting-item purple impressionism reallife-filter seurat-filter pointillism-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437658"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP259921.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>This is Seurat’s final study for his monumental painting of Parisians at leisure on an island in
+                    the Seine (Art Institute of Chicago). Contrasting pigments are woven together with small, patchy
+                    brushstrokes, whereas in the mural-sized park scene—which debuted two years later at the 1886
+                    Impressionist exhibition—Seurat used tighter, dot-like dabs of paint, a technique which came to be
+                    known as Pointillism (from the French word point, or dot). He preferred the term Divisionism—the
+                    principle of separating color into small touches placed side-by-side and meant to blend in the eye
+                    of the viewer.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Study for 'A Sunday on La Grande Jatte'</h2>
+            <h3>Georges Seurat, 1884</h3>
+          </div>
+        </div>
+        <div class="painting-item orange impressionism reallife-filter renoir-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/438815"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT49.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>In this commissioned portrait, as Marcel Proust observed, Renoir gave expression to 'the poetry of
+                    an elegant home and the beautiful dresses of our time.' In the Japanese-style sitting room of her
+                    Parisian townhouse—the décor and chic gown testifying to her stylish taste—Marguerite Charpentier
+                    sits beside her son, Paul. At age three, his locks are still uncut and, in keeping with current
+                    fashion, he is dressed identically to his sister Georgette, perched on the family dog. The
+                    well-connected publisher's wife, who hosted elite literary salons attended by such writers as
+                    Flaubert, the Goncourts, and Zola, used her influence to ensure that the painting enjoyed a choice
+                    spot at the Salon of 1879.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Madame Georges Charpentier and Her Children, Georgette-Berthe and Paul-Émile-Charles</h2>
+            <h3>Auguste Renoir, 1878</h3>
+          </div>
+        </div>
+        <div class="painting-item yellow impressionism stilllife-filter degas-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436121"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1566.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>The juxtaposition of the prominent bouquet and the off-center figure, gazing distractedly to the
+                    right, exemplifies Degas’s aim of capturing individuals in seemingly casual, slice-of-life views.
+                    The sitter is probably the wife of the artist’s schoolboy friend Paul Valpinçon; Degas immensely
+                    enjoyed outings to their country house, Ménil-Hubert, and the dahlias, asters, and gaillardias in
+                    the bouquet would suggest a late summer visit. The painting was preceded by a pencil drawing of the
+                    woman, also dated 1865 (Fogg Museum, Cambridge, Mass.).</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>A Woman Seated beside a Vase of Flowers (Madame Paul Valpinçon?)</h2>
+            <h3>Edgar Degas, 1865</h3>
+          </div>
+        </div>
+        <div class="painting-item red impressionism stilllife-filter renoir-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437429"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1140.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Reviewers of the 1882 Impressionist exhibition were dazzled by this 'very appealing' still life of
+                    'a certain fruit bowl of 'Peaches,' whose velvety execution verges on a trompe l'oeil.' Painted the
+                    previous summer at the country house of Renoir’s patron Paul Berard, it is one of two still lifes
+                    that feature the same faïence jardinière; the other version also belongs to the Metropolitan Museum
+                    (56.218).</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Still Life with Peaches</h2>
+            <h3>Auguste Renoir, 1881</h3>
+          </div>
+        </div>
+      </div>
+      <div class="painting2">
+        <div class="painting-item green post-impressionism landscape-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/435877"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-20099-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>The distinctive silhouette of Mont Saint-Victoire rises above the Arc River valley near the town of
+                    Aix. To paint this scene, Cézanne stood close to Montbriand, his sister’s property, at the top of
+                    the hill just behind her house; the wall of the neighboring farmhouse is barely visible. Cézanne
+                    sought to reveal the inner geometry of nature, 'to make of Impressionism something solid and
+                    durable, like the art of museums.' Indeed the railroad viaduct that cuts through this pastoral scene
+                    is evocative of a Roman aqueduct, recalling paintings by Nicolas Poussin.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Mont Sainte-Victoire and the Viaduct of the Arc River Valley</h2>
+            <h3>Paul Cézanne, 1882–85</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism landscape-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/435872"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1029.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Cézanne enthused about the fishing village of L’Estaque to Pissarro in 1876: 'It is like a playing
+                    card. Red roofs over the blue sea. . . . The sun is so terrific here that it seems to me as if the
+                    objects were silhouetted not only in black and white, but in blue, red, brown, and violet.' Cézanne
+                    painted some twenty views of L'Estaque over the next decade, a dozen of them facing toward or across
+                    the gulf of Marseilles. In the distance of this painting, atop the hill to the right of the jetty,
+                    the towers of Notre-Dame-de-la-Garde stand watch over the city of Marseilles.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>The Gulf of Marseilles Seen from L'Estaque</h2>
+            <h3>Paul Cézanne, 1885</h3>
+          </div>
+        </div>
+        <div class="painting-item yellow post-impressionism portrait-filter vangogh-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436529"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1396.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>While in Arles, Van Gogh painted two very similar portraits of Marie Ginoux, the proprietress of
+                    the Café de la Gare, wearing the regional costume of the legendary dark-haired beauties of Arles.
+                    The first version, which he described in a letter of November 1888 as 'an Arlésienne . . . knocked
+                    off in one hour,' must be the more thinly and summarily executed portrait in the Musée d'Orsay,
+                    Paris. In it a parasol and gloves lie on the table instead of books. This portrait belonged to the
+                    sitter until she sold it in 1895.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>L'Arlésienne: Madame Joseph-Michel Ginoux (Marie Julien, 1848–1911)</h2>
+            <h3>Vincent van Gogh, 1888–89</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism landscape-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/435885"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1937.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Despite the many areas of canvas left bare, this is one of the few paintings Cézanne signed and
+                    thus regarded as 'finished.' It shows a view of the Jesuit estate of Saint-Joseph, situated on a
+                    hill, the Colline des Pauvres, on the road between Aix and the village of Le Tholonet, an area
+                    beloved by the artist since his youth. This picture was the first by Cézanne to enter an American
+                    museum: the Metropolitan acquired it from the historic Armory Show in 1913, for the highest price of
+                    any work in the exhibition.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>View of the Domaine Saint-Joseph</h2>
+            <h3>Paul Cézanne, late 1880s</h3>
+          </div>
+        </div>
+        <div class="painting-item orange post-impressionism portrait-filter vangogh-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436532"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1502_cropped2.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Van Gogh produced more than twenty self-portraits during his Parisian sojourn (1886–88). Short of
+                    funds but determined nevertheless to hone his skills as a figure painter, he became his own best
+                    sitter: 'I purposely bought a good enough mirror to work from myself, for want of a model.' This
+                    picture, which shows the artist's awareness of Neo-Impressionist technique and color theory, is one
+                    of several that are painted on the reverse of an earlier peasant study.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Self-Portrait with a Straw Hat (obverse: The Potato Peeler)</h2>
+            <h3>Vincent Van Gogh, 1887</h3>
+          </div>
+        </div>
+        <div class="painting-item red post-impressionism portrait-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/435876"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP320128.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Of the four portraits that Cézanne painted of his wife wearing a shawl-collared red dress, this is
+                    the only one to show her in an elaborately furnished interior. Seated in a high-backed yellow chair
+                    and wedged between well-placed props that seem to bend to her form and shift to her weight, Madame
+                    Cézanne is the lynchpin of a tilting, spatially complex composition. The mottled blue wall, the dark
+                    red band that edges the wainscoting, and the mirror over the fireplace at left identify the setting
+                    as the apartment that Cézanne rented at 15 quai d’Anjou, Paris, from 1888 to 1890.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Madame Cézanne (Hortense Fiquet, 1850–1922) in a Red Dress</h2>
+            <h3>Paul Cézanne, 1888–90</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism stilllife-filter vangogh-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436528"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP346474.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>In May 1890, just before he checked himself out of the asylum at Saint-Rémy, Van Gogh painted four
+                    exuberant bouquets of spring flowers, the only still lifes of any ambition he had undertaken during
+                    his yearlong stay: two of irises, two of roses, in contrasting color schemes and formats. In the
+                    Museum’s Irises he sought a “harmonious and soft” effect by placing the “violet” flowers against a
+                    “pink background,” which have since faded owing to his use of fugitive red pigments. Another work
+                    from this series, Roses (1993.400.5), hangs in the adjacent gallery. Both were owned by the artist’s
+                    mother until her death in 1907.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Irises</h2>
+            <h3>Vincent van Gogh, 1890</h3>
+          </div>
+        </div>
+        <div class="painting-item green post-impressionism portrait-filter lautrec-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437838"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP124056.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>From 1889 to 1891, Lautrec experimented with the plein-air approach of the Impressionists,
+                    producing a group of studies showing figures set against the foliage in the garden of Monsieur
+                    (Père) Forest, his neighbor in the Paris district of Montmartre. Lautrec referred to these
+                    self-imposed exercises in technique as 'impositions,' for which friends as well as models posed. The
+                    clothes and hairstyle of this sitter suggest that she is a working-class woman.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Woman in the Garden of Monsieur Forest</h2>
+            <h3>Henri de Toulouse-Lautrec, 1889–91</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism stilllife-filter gauguin-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437999"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1027.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>One of Gauguin’s most treasured possessions was a painting by Cézanne, Still Life with Fruit Dish
+                    (1879–80, now Museum of Modern Art, New York ), which he emulates in this picture. Within a
+                    similarly compressed space, Gauguin substituted mangoes for Cézanne’s apples and a Tahitian-style
+                    printed cloth for a French floral wallpaper design. One significant departure is the human figure at
+                    the upper right, glimpsed through a door or window. The year after he completed this work, Gauguin’s
+                    finances were so dire that he arranged for the sale of his prized Cézanne.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Still Life with Teapot and Fruit</h2>
+            <h3>Paul Gauguin, 1896</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism reallife-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/435868"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP231550.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Cézanne was in his fifties when he undertook a painting campaign devoted to giving memorable form
+                    to a subject that inspired the likes of Caravaggio and Chardin. He was determined from the start—as
+                    we see in this sturdy Provençal scene—to make it his own. Cézanne carefully crafted this composition
+                    from figure studies he had made of local farmhands. Once he had puzzled-out his conception, he
+                    continued to fine-tune the poses and positions of the card players, until they—like the four pipes
+                    hanging on the wall behind them—each fell perfectly into place. Cézanne channeled the quiet
+                    authority he achieved here into a much larger variant (Barnes Foundation, Philadelphia) and
+                    punctuated the series with three works in which he pared away extraneous details to focus his gaze
+                    on a pair of players.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>The Card Players</h2>
+            <h3>Paul Cézanne, 1890–92</h3>
+          </div>
+        </div>
+        <div class="painting-item purple post-impressionism reallife-filter seurat-filter pointillism-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437654"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP375450_cropped.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>At the Salon des Indépendants in 1888 Seurat demonstrated the versatility of his technique by
+                    exhibiting Circus Sideshow, a nighttime outdoor scene in artificial light, and Models, an indoor,
+                    daylight scene (Barnes Foundation, Philadelphia). This is Seurat’s first nocturnal painting and the
+                    first to depict popular entertainment. It represents the parade, or sideshow, of the Circus Corvi at
+                    the annual Gingerbread Fair, held in eastern Paris around the place de la Nation, in spring 1887.
+                    Sideshows were staged outside the circus tent, for free, to entice passersby to purchase tickets.
+                    The onlookers at the far right are queued on stairs leading to the box office.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Circus Sideshow (Parade de cirque)</h2>
+            <h3>Georges Seurat, 1887-88</h3>
+          </div>
+        </div>
+        <div class="painting-item purple post-impressionism portrait-filter lautrec-filter loose-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/438016"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT10262.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>As early as 1901 the woman in this painting was identified as a streetwalker. Her name, however,
+                    has been lost to history; only the nickname La Casque d'Or (Golden Helmet), which refers to her wig,
+                    has survived. She sits in the garden of Monsieur Forest, Lautrec's neighbor in Montmartre.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>The Streetwalker</h2>
+            <h3>Henri de Toulouse-Lautrec, 1890–91</h3>
+          </div>
+        </div>
+        <div class="painting-item green post-impressionism portrait-filter vangogh-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437984"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DP-19279-001.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Of the five versions of Van Gogh’s portrait of Augustine Roulin, wife of his friend the postmaster
+                    of Arles, the present canvas is the one the sitter chose for herself. Van Gogh remarked that 'she
+                    had a good eye and took the best.' He began the portraits just before his breakdown in Arles, in
+                    December 1888, and completed them in early 1889, calling them 'La Berceuse,' meaning 'lullaby, or
+                    woman who rocks the cradle,' indicated by the rope held in the sitter’s hand, which is attached to
+                    the unseen cradle.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot Roulin, 1851–1930)</h2>
+            <h3>Vincent Van Gogh, 1889</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism reallife-filter cezanne-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/437990"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1944.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>The mood and palette of this pensive figure study relate it to Cézanne's celebrated series of
+                    paintings showing men playing cards. This particular individual does not appear in any of those
+                    pictures, but there can be no doubt that he, like the models for the card players, was one of the
+                    workers at Jas de Bouffan, the Cézanne family estate in Aix-en-Provence.</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Seated Peasant</h2>
+            <h3>Paul Cézanne, 1892–96</h3>
+          </div>
+        </div>
+        <div class="painting-item blue post-impressionism landscape-filter vangogh-filter painterly-filter">
+          <div class="painting-image"><a href="https://www.metmuseum.org/art/collection/search/436535"
+              target="_blank"><img src="https://images.metmuseum.org/CRDImages/ep/original/DT1567.jpg">
+              <div class="painting-overlay">
+                <div class="hover-painting-text">
+                  <h4>Description:</h4>
+                  <p>Cypresses gained ground in Van Gogh’s work by late June 1889 when he resolved to devote one of his
+                    first series in Saint-Rémy to the towering trees. Distinctive for their rich impasto, his exuberant
+                    on-the-spot studies include the Met’s close-up vertical view of cypresses (49.30) and this majestic
+                    horizontal composition, which he illustrated in reed-pen drawings sent to his brother on July 2. Van
+                    Gogh regarded the present work as one of his “best” summer landscapes and was prompted that
+                    September to make two studio renditions: one on the same scale (National Gallery, London) and the
+                    other a smaller replica, intended as a gift for his mother and sister (private collection).</p>
+                </div>
+              </div>
+            </a></div>
+          <div class="painting-content">
+            <h2>Wheat Field with Cypresses</h2>
+            <h3>Vincent Van Gogh, 1889</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--About content-->
+  <div class="about-overlay">
+    <div class="about-content">
+      <h3>About</h3>
+      <p>I created this comparison based off my love for art history and Impressionism in particular. I love the colours
+        in Impressionist paintings and wanted to compare them to a similar movement, Post-Impressionism, to see what
+        differences might appear in the way colour is used.</p>
+      <h3>How were colour classifications decided?</h3>
+      <p>To decide on a main colour in each painting, I ran each image through colour simplifying programs to narrow
+        down the primary colours, but often I used my own judgement. For example, if an image did not have an obvious
+        main colour, I considered the overall hue of the painting as well as which section of colour was the most
+        prominent.</p>
+      <h3>Futher Reading:</h3>
+      <p><a
+          href="https://www.oxfordartonline.com/page/impressionism-and-post-impressionism/impressionism-and-postimpressionism">Impressionism
+          and Post-Impressionism: Oxford Art Online</a></p>
+      <h4 style="text-align: center;">Sources</h4>
+      <p style="font-size: 16px; text-align: center;"><a href="https://metmuseum.github.io/#object">MET API
+          Documentation</a></p>
+      <p style="font-size: 16px; text-align: center;"><a
+          href="https://github.com/awesomedata/awesome-public-datasets">GitHub Public Datasets</a></p>
+      <!--popup's close button-->
+      <button class="close">X</button>
+    </div>
+  </div>
+
+
+  <!-- Load jQuery, a JavaScript library to make JavaScript more readable and easier to use -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Load Isoptope, a filter and sorting JavaScript library -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Load relative JavaScript file -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>

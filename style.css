@@ -1,0 +1,931 @@
+/* General */
+html {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #d0deb8;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #15432c;
+  border-radius: 0px;
+  border-color: #769e87;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #769e87;
+}
+
+h2,
+h3,
+h4 {
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  margin: 10px;
+}
+
+p {
+  font-family: bilo, Verdana, sans-serif;
+  margin: 10px;
+}
+
+/* Introduction */
+.introduction {
+  width: 100vw;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #15432c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction h1 {
+  font-size: 7vw;
+  color: #d0deb8;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+.introduction p {
+  padding-bottom: 30px;
+  font-size: 2.5vw;
+  color: #d0deb8;
+  font-family: bilo, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 70vw;
+  text-align: center;
+}
+
+.introduction button {
+  background: none;
+  border: none;
+  background: #d0deb8;
+  color: #15432c;
+  padding: 20px;
+  border-radius: 0px;
+  font-size: 30px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.introduction button:hover {
+  background: #769e87;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #15432c;
+  overflow-x: hidden;
+  padding-top: 0px;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d0deb8;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #769e87;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #15432c;
+  color: #d0deb8;
+  border: none;
+  height: 100%;
+  width: 35px;
+  position: fixed;
+  top: 0px;
+  left: 60px;
+  bottom: auto;
+}
+
+.sidebar.opened {
+  width: 450px;
+}
+
+.openbtn:hover {
+  background-color: #769e87;
+}
+
+#arrow-button {
+  transform: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* About Page */
+.about-overlay {
+  visibility: hidden;
+  position: absolute;
+  background: #769e87;
+  width: 500px;
+  height: 600px;
+  left: 450px;
+  top: 0px;
+  z-index: 10;
+}
+
+.about-overlay.active {
+  visibility: visible;
+}
+
+.about-content {
+  visibility: hidden;
+  font-family: bilo, Verdana, sans-serif;
+  color: #15432c;
+  padding: 5px;
+}
+
+.about-content a {
+  color: #15432c;
+  text-decoration: underline;
+}
+
+.about-content h2 {
+  font-size: 23px;
+}
+
+.about-content h3 {
+  font-size: 18px;
+}
+
+.about-content p {
+  font-size: 19px;
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+
+.about-content.active {
+  visibility: visible;
+}
+
+.about-button {
+  background: none;
+  border: none;
+  color: #d0deb8;
+  padding-top: 10px;
+  padding-left: 0px;
+  border-radius: 0px;
+  font-size: 28px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bolder;
+  transition: 0.3s;
+  /* position: fixed;
+  bottom: 0%;
+  right: 0%;
+  opacity: 75%; */
+  transform: auto;
+  margin-left: 100px;
+}
+
+.about-button:hover {
+  color: #769e87;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: #15432c;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.close:hover {
+  color: #d0deb8;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 30px;
+}
+
+
+
+/* Filtering */
+.filter-background {
+  width: 60px;
+  height: 100%;
+  background-color: #15432c;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  bottom: auto;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-button-group button {
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  color: #15432c;
+  background: #d0deb8;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 8px;
+  transition: background 0.3s;
+  position: fixed;
+  z-index: 2;
+}
+
+.filter-button-group button:hover {
+  background-color: #769e87;
+}
+
+#all-filter {
+  top: 10vh;
+  left: 15px;
+  padding: 7px;
+  bottom: auto;
+}
+
+#red-filter {
+  background: #e6462d;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 22.5vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#red-filter:hover {
+  background: #b71800;
+}
+
+#orange-filter {
+  background-color: #f68655;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 35vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#orange-filter:hover {
+  background-color: #ff5911;
+}
+
+#yellow-filter {
+  background: #e4d444;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 47.5vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#yellow-filter:hover {
+  background: #fffb00;
+}
+
+#green-filter {
+  background: #99ce60;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 60vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#green-filter:hover {
+  background: #56d815;
+}
+
+#blue-filter {
+  background: #669dce;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 72.5vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#blue-filter:hover {
+  background: #099ceb;
+}
+
+#purple-filter {
+  background: #8e77cf;
+  color: #303a61;
+  transition: background 0.3s;
+  top: 85vh;
+  left: 15px;
+  bottom: auto;
+}
+
+#purple-filter:hover {
+  background: #a13be9;
+}
+
+/* End colour filter, start dropdown filters */
+.filters-sidebar {
+  margin-left: 100px;
+}
+
+.filter-buttons {
+  background-color: #d0deb8;
+  border: 0px;
+  height: 30px;
+  font-size: 16px;
+  color: #15432c;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  margin-bottom: 7px;
+  margin-left: 3px;
+}
+
+.filter-buttons:hover {
+  background-color: #769e87;
+}
+
+.isotope-reset {
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: #d0deb8;
+  border: 0px;
+  height: 30px;
+  font-size: 16px;
+  color: #15432c;
+  font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.isotope-reset:hover {
+  background-color: #769e87;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #769e87 !important;
+}
+
+.ui-group h3 {
+  font-size: 18px;
+  color: #d0deb8;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+button:active {
+  background-color: #769e87;
+}
+
+/* Painting Grid */
+.post-impressionism-title {
+  position: fixed;
+  top: 0px;
+  left: 62%;
+  font-size: 1.5vw;
+  color: #15432c;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 65px;
+}
+
+.impressionism-title {
+  position: fixed;
+  top: 0px;
+  left: 20%;
+  font-size: 1.5vw;
+  color: #15432c;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 65px;
+}
+
+.painting-grid {
+  height: 100vh !important;
+  width: 100%;
+}
+
+.painting1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 93vh !important;
+  width: 49%;
+  float: left;
+  overflow: scroll;
+}
+
+.painting2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 93vh !important;
+  width: 49%;
+  float: right;
+  overflow: scroll;
+}
+
+.painting-item {
+  background-color: #d0deb8;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  margin-bottom: 50px;
+}
+
+.painting-item a {
+  color: #15432c;
+}
+
+.painting-item h2 {
+  margin-bottom: 10px;
+  width: fit-content;
+  font-size: 2.3vw;
+  color: #15432c;
+}
+
+.painting-item h3 {
+  font-size: 1.8vw;
+  color: #15432c;
+  font-style: italic;
+}
+
+.painting-item h4 {
+  font-size: 1.8vw;
+  color: #d0deb8;
+  margin-bottom: 0px;
+}
+
+.painting-item p {
+  font-size: 1.5vw;
+  color: #d0deb8;
+}
+
+.painting-item .painting-content {
+  padding: 10px 0px 0px 0px;
+}
+
+.painting-image {
+  position: relative;
+  width: 100%;
+}
+
+.painting-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #15432c;
+}
+
+.painting-image:hover .painting-overlay {
+  opacity: 100%;
+}
+
+.hover-painting-text {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* Responsiveness */
+@media (max-width:960px) {
+  body {
+    background: #d0deb8;
+    padding: 10px;
+    margin-left: auto;
+  }
+
+  .introduction h1 {
+    font-size: 8vw;
+    color: #d0deb8;
+    font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .introduction p {
+    padding-bottom: 30px;
+    font-size: 3.5vw;
+    color: #d0deb8;
+    font-family: bilo, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    width: 70vw;
+    text-align: center;
+  }
+
+  /* About Page */
+  .about-overlay {
+    visibility: hidden;
+    position: absolute;
+    background: #769e87;
+    width: 96vw;
+    height: 86vh;
+    left: 2%;
+    top: 2%;
+    z-index: 9;
+    overflow-y: scroll;
+  }
+
+  .about-overlay.active {
+    visibility: visible;
+  }
+
+  .about-content {
+    visibility: hidden;
+    font-family: bilo, Verdana, sans-serif;
+    color: #15432c;
+    padding: 5px;
+  }
+
+  .about-content h2 {
+    font-size: 23px;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .about-content p {
+    font-size: 19px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+  }
+
+  .about-content.active {
+    visibility: visible;
+  }
+
+  .about-button {
+    background: none;
+    border: none;
+    color: #d0deb8;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 25px;
+    font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    font-weight: bolder;
+    transition: 0.3s;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+
+  .about-button:hover {
+    color: #769e87;
+  }
+
+  .close {
+    background: none;
+    border: none;
+    color: #15432c;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+
+  .close:hover {
+    color: #d0deb8;
+  }
+
+  /* Filtering */
+  .filter-background {
+    height: 60px;
+    width: 100%;
+    background-color: #15432c;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 8;
+    top: auto;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-button-group button {
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    color: #15432c;
+    background: #d0deb8;
+    font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 8px;
+    transition: background 0.3s;
+    position: fixed;
+    z-index: 2;
+  }
+
+  #all-filter {
+    left: 5vw;
+    bottom: 15px;
+    padding: 7px;
+    z-index: 9;
+    top: auto;
+  }
+
+  #red-filter {
+    background: #e6462d;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 19vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  #orange-filter {
+    background: #f68655;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 33vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  #yellow-filter {
+    background: #e4d444;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 47vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  #green-filter {
+    background: #99ce60;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 61vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  #blue-filter {
+    background: #669dce;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 75vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  #purple-filter {
+    background: #8e77cf;
+    color: #303a61;
+    transition: background 0.3s;
+    bottom: 15px;
+    left: 90vw;
+    z-index: 9;
+    top: auto;
+  }
+
+  .filters-sidebar {
+    margin-left: 20px;
+  }
+
+  .isotope-reset {
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: #d0deb8;
+    border: 0px;
+    height: 30px;
+    font-size: 16px;
+    color: #15432c;
+    font-family: new-farm, 'Segoe UI', Tahoma, sans-serif;
+    transition: 0.3s;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 90px;
+    left: 0;
+    top: auto;
+    background-color: #15432c;
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 0.3s;
+  }
+
+  .sidebar.opened {
+    height: 80%;
+    width: 100%;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d0deb8;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #769e87;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #15432c;
+    color: #d0deb8;
+    border: none;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    bottom: 59px;
+    left: 0px;
+    z-index: 9;
+    top: auto;
+  }
+
+  .openbtn:hover {
+    background-color: #769e87;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 30px;
+  }
+
+  #arrow-button {
+    transform: rotate(270deg);
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Painting style */
+  .post-impressionism-title {
+    position: fixed;
+    top: 0px;
+    left: 48%;
+    font-size: 2.1vw;
+    color: #15432c;
+    height: 61px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .impressionism-title {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 2.1vw;
+    color: #15432c;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 61px;
+    padding-top: 10px;
+  }
+
+  .painting1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 85vh !important;
+    width: 49%;
+    float: left;
+    overflow: scroll;
+  }
+
+  .painting2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 85vh !important;
+    width: 49%;
+    float: right;
+    overflow: scroll;
+  }
+
+  .painting-item h2 {
+    margin-bottom: 8px;
+    width: fit-content;
+    font-size: 21px;
+    color: #15432c;
+  }
+
+  .painting-item h3 {
+    font-size: 17px;
+    color: #15432c;
+    font-style: italic;
+  }
+
+  .painting-item h4 {
+    font-size: 1px;
+    color: #15432c;
+    margin-bottom: 0px;
+  }
+
+  .painting-item p {
+    font-size: 1px;
+    color: #15432c;
+  }
+
+  .painting-item {
+    background-color: #d0deb8;
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin-bottom: 40px;
+  }
+
+}

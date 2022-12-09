@@ -1,0 +1,136 @@
+{
+   "paintings1":[
+      {
+         "artist" : "Camille Pissarro",
+         "description" : "This view of Pontoise, just northwest of Paris, helped establish Pissarro’s reputation as an innovative painter of the rural French landscape. The critic Émile Zola praised the picture enthusiastically when it was shown along with another rustic scene at the Salon of 1868, writing, 'This is the modern countryside. One feels that man has passed by, turning and cutting the earth. . . . And this little valley, this hill have a heroic simplicity and forthrightness. Nothing would be more banal were it not so grand. From ordinary reality the painter's temperament has drawn a rare poem of life and strength.'",
+         "link" : "https://www.metmuseum.org/art/collection/search/437299",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DT1859.jpg",
+         "name" : "Jalais Hill, Pontoise",
+         "date" : "1867",
+         "colour" : "green",
+         "movement" : "impressionism",
+         "objectnumber" : "437299"
+      },
+      {
+         "artist" : "Edouard Manet",
+         "description" : "Manet summered at Gennevilliers in 1874, often spending time with Monet and Renoir across the Seine at Argenteuil, where Boating was painted. Beyond adopting the lighter touch and palette of his younger Impressionist colleagues, Manet exploits the broad planes of color and strong diagonals of Japanese prints to give inimitable form to this scene of outdoor leisure. Rodolphe Leenhoff, the artist’s brother-in-law, is thought to have posed for the sailor but the identity of the woman is uncertain. Shown in the Salon of 1879, Boating was deemed 'the last word in painting' by Mary Cassatt, who recommended the acquisition to the New York collectors Louisine and H.O. Havemeyer.",
+         "link" : "https://www.metmuseum.org/art/collection/search/436947",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DP-25466-001.jpg",
+         "name" : "Boating",
+         "date" : "1874",
+         "colour" : "blue",
+         "movement" : "impressionism",
+         "objectnumber" : "436947"
+      },
+      {
+         "artist" : "Edgar Degas",
+         "description" : "This work and its variant in the Musée d'Orsay, Paris, represent the most ambitious paintings Degas devoted to the theme of the dance. Some twenty-four women, ballerinas and their mothers, wait while a dancer executes an 'attitude' for her examination. Jules Perrot, a famous ballet master, conducts the class. The imaginary scene is set in a rehearsal room in the old Paris Opéra, which had recently burned to the ground. On the wall beside the mirror, a poster for Rossini’s Guillaume Tell pays tribute to the singer Jean-Baptiste Faure, who commissioned the picture and lent it to the 1876 Impressionist exhibition.",
+         "link" : "https://www.metmuseum.org/art/collection/search/438817",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DP-20101-001.jpg",
+         "name" : "The Dance Class",
+         "date" : "1874",
+         "colour" : "green",
+         "movement" : "impressionism",
+         "objectnumber" : "438817"
+      },
+      {
+         "artist" : "Camille Pissarro",
+         "description" : "The theme of potato gathering recurs in Pissarro’s oeuvre in a number of media—pencil, gouache, oil, and prints—over a period of thirty years. The artist is borrowing a subject from the great Barbizon painter Camille Corot, while anticipating the more staccato, broken brushwork of later artists such as Georges Seurat. In the Lehman Collection painting, Pissarro’s treatment of harvesters in Pontoise is carefully structured, while remaining expressive in tone and brushwork.",
+         "link" : "https://www.metmuseum.org/art/collection/search/459108",
+         "photo" : "https://images.metmuseum.org/CRDImages/rl/original/DT3127.jpg",
+         "name" : "The Harvest, Pontoise (La Récolte, Pontoise)",
+         "date" : "1881",
+         "colour" : "yellow",
+         "movement" : "impressionism",
+         "objectnumber" : "459108"
+      },
+      {
+         "artist" : "Camille Pissarro",
+         "description" : "By virtue of their size, placement, and quiet dignity, these youthful laborers dominate the landscape setting—an open field near Pissarro’s house at Éragny. Sympathetic to anarchist ideals, the artist wanted to preserve the values of agrarian society that were being threatened by the rapid industrialization of France. He began this picture in summer 1891 and completed it in mid-January 1892, a month before the opening of a major exhibition of his work organized by his dealer Joseph Durand-Ruel. Many of the fifty paintings were sold from the show, but Pissarro kept this canvas and gave it to his wife.",
+         "link" : "https://www.metmuseum.org/art/collection/search/437304",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DT1860.jpg",
+         "name" : "Two Young Peasant Women",
+         "date" : "1891–92",
+         "colour" : "green",
+         "movement" : "impressionism",
+         "objectnumber" : "437304"
+      },
+      {
+         "artist" : "Auguste Renoir",
+         "description" : "Pierre Auguste Renoir painted a great many canvases of single bathers in outdoor settings, timeless studies of fulsome young women. In the Lehman painting, his model averts her glance, seated in shy three-quarter profile. Innocent yet sensual, this charming nude would have pleased Renoir's audience in the later nineteenth century. The picture is thinly painted, its brushwork soft and supple. Renoir probably posed his model in the studio, since the rapidly brushed landscape background is far more imaginary than real. Claude Monet first owned this painting, and remarked to a friend that while the nude was beautiful, the landscape was conventional. Renoir clearly concentrates his brush on the undulating physiognomy of his innocent auburn-haired model.",
+         "link" : "https://www.metmuseum.org/art/collection/search/459110",
+         "photo" : "https://images.metmuseum.org/CRDImages/rl/original/DP-17279-001.jpg",
+         "name" : "Young Girl Bathing",
+         "date" : "1892",
+         "colour" : "orange",
+         "movement" : "impressionism",
+         "objectnumber" : "459110"
+      },
+      {
+         "artist" : "Camille Pissarro",
+         "description" : "Made the same year as Pissarro’s bird’s-eye views of the Jardin des Tuileries in Paris, this idyllic scene of a meadow near the artist’s home in rural Éragny is a counterpoint to his paintings of modern urban life. Pissarro depicted the same trio of haystacks, seen from a slightly different vantage point, and under afternoon rather than morning light (private collection), a practice recalling Monet’s Haystacks series of the early 1890s.",
+         "link" : "https://www.metmuseum.org/art/collection/search/438738",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DP-20613-001.jpg",
+         "name" : "Haystacks, Morning, Éragny",
+         "date" : "1899",
+         "colour" : "green",
+         "movement" : "impressionism",
+         "objectnumber" : "438738"
+      },
+      {
+         "artist" : "Auguste Renoir",
+         "description" : "Renoir likely painted this work in his studio, posing his model in a wicker chair and relying on studies he had made on the Normandy coast to furnish the beach scene behind her. Stylistically, it reflects the impact of Renoir’s trip to Italy in 1881–82, which inspired him to unite the “grandeur and simplicity” he admired in Renaissance art with the luminosity of Impressionism. His new approach, which he called his “dry” manner, is evident in the sitter’s face, with its carefully drawn features and smooth handling of paint. The medley of quick strokes in the background, however, displays the freer technique of Renoir’s earlier years.",
+         "link" : "https://www.metmuseum.org/art/collection/search/437430",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DP-14936-039.jpg",
+         "name" : "By the Seashore",
+         "date" : "1883",
+         "colour" : "blue",
+         "movement" : "impressionism",
+         "objectnumber" : "437430"
+      },
+      {
+         "artist" : "Georges Seurat",
+         "description" : "This is Seurat’s final study for his monumental painting of Parisians at leisure on an island in the Seine (Art Institute of Chicago). Contrasting pigments are woven together with small, patchy brushstrokes, whereas in the mural-sized park scene—which debuted two years later at the 1886 Impressionist exhibition—Seurat used tighter, dot-like dabs of paint, a technique which came to be known as Pointillism (from the French word point, or dot). He preferred the term Divisionism—the principle of separating color into small touches placed side-by-side and meant to blend in the eye of the viewer.",
+         "link" : "https://www.metmuseum.org/art/collection/search/437658",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DP259921.jpg",
+         "name" : "Study for 'A Sunday on La Grande Jatte'",
+         "date" : "1884",
+         "colour" : "green",
+         "movement" : "impressionism",
+         "objectnumber" : "437658"
+      },
+      {
+         "artist" : "Auguste Renoir",
+         "description" : "In this commissioned portrait, as Marcel Proust observed, Renoir gave expression to 'the poetry of an elegant home and the beautiful dresses of our time.' In the Japanese-style sitting room of her Parisian townhouse—the décor and chic gown testifying to her stylish taste—Marguerite Charpentier sits beside her son, Paul. At age three, his locks are still uncut and, in keeping with current fashion, he is dressed identically to his sister Georgette, perched on the family dog. The well-connected publisher's wife, who hosted elite literary salons attended by such writers as Flaubert, the Goncourts, and Zola, used her influence to ensure that the painting enjoyed a choice spot at the Salon of 1879.",
+         "link" : "https://www.metmuseum.org/art/collection/search/438815",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DT49.jpg",
+         "name" : "Madame Georges Charpentier and Her Children, Georgette-Berthe and Paul-Émile-Charles",
+         "date" : "1878",
+         "colour" : "orange",
+         "movement" : "impressionism",
+         "objectnumber" : "438815"
+      },
+      {
+         "artist" : "Auguste Renoir",
+         "description" : "Reviewers of the 1882 Impressionist exhibition were dazzled by this 'very appealing' still life of 'a certain fruit bowl of 'Peaches,' whose velvety execution verges on a trompe l'oeil.' Painted the previous summer at the country house of Renoir’s patron Paul Berard, it is one of two still lifes that feature the same faïence jardinière; the other version also belongs to the Metropolitan Museum (56.218).",
+         "link" : "https://www.metmuseum.org/art/collection/search/437429",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DT1140.jpg",
+         "name" : "Still Life with Peaches",
+         "date" : "1881",
+         "colour" : "red",
+         "movement" : "impressionism",
+         "objectnumber" : "437429"
+      },
+      {
+         "artist" : "Edgar Degas",
+         "description" : "The juxtaposition of the prominent bouquet and the off-center figure, gazing distractedly to the right, exemplifies Degas’s aim of capturing individuals in seemingly casual, slice-of-life views. The sitter is probably the wife of the artist’s schoolboy friend Paul Valpinçon; Degas immensely enjoyed outings to their country house, Ménil-Hubert, and the dahlias, asters, and gaillardias in the bouquet would suggest a late summer visit. The painting was preceded by a pencil drawing of the woman, also dated 1865 (Fogg Museum, Cambridge, Mass.).",
+         "link" : "https://www.metmuseum.org/art/collection/search/436121",
+         "photo" : "https://images.metmuseum.org/CRDImages/ep/original/DT1566.jpg",
+         "name" : "A Woman Seated beside a Vase of Flowers (Madame Paul Valpinçon?)",
+         "date" : "1865",
+         "colour" : "yellow",
+         "movement" : "impressionism",
+         "objectnumber" : "436121"
+      }
+   ]
+}
